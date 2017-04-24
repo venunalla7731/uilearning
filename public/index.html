@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MEAN is best</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+  <h1>Express FTW!</h1>
+  wall to wall<input type = "number" id = "across"><br>
+
+  height of walls <input type="number" id="height"><br>
+
+  <button onclick="materialsNeeded()">calculate materials</button>
+  <h1>what is your state?</h1>
+  <select id="state">
+    <option value="WY">wyoming</option>
+    <option value="UT">Utah</option>
+    <option value="ID">Idaho</option>
+    <option value="MT">Montana</option>
+  </select>
+
+  <h1>your home style?</h1>
+  <select id="home">
+    <option value="single">single-fa</option>
+    <option value="family">apart-fa</option>
+    <option value="multi">multi-family</option>
+    <option value="mobile">mobile-family</option>
+  </select>
+  <button onclick="evaluatePage()">run stuff </button>
+
+  <script src="javascript/script.js"></script>
+
+</body>
+</html>
