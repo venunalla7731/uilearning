@@ -6,10 +6,9 @@
 </head>
 <body>
 
-  <h1>Express FTW!</h1>
   wall to wall<input type = "number" id = "across"><br>
 
-  height of walls <input type="number" id="height"><br>
+  height of walls<input type="number" id="height"><br>
 
   <button onclick="materialsNeeded()">calculate materials</button>
   <h1>what is your state?</h1>
@@ -27,8 +26,36 @@
     <option value="multi">multi-family</option>
     <option value="mobile">mobile-family</option>
   </select>
+  <h2>lighting</h2>
+  <label><input type="checkbox" name="bulb" value="ince">Incedes</label>
+  <label><input type="checkbox" name="bulb" value="power">power</label>
+  <label><input type="checkbox" name="bulb" value="low">low power</label>
+  <br>
   <button onclick="evaluatePage()">run stuff </button>
+<div id="output"></div>
+<button onclick="myfunction()">run button</button>
+<select id="buttonClicked">
+  <option value="day1">s</option>
+  <option value="day2">m</option>
+  <option value="day3">t</option>
+  </select>
+<div id="button"></div>
+<!--Ajax and json for animals-->
+<header>
+  <h1>JSON and AJAX</h1>
+  <button id="btn">Fetch Info for 3 New Animals</button>
+  <style>
+    .hide-me {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.75);
+}
+  </style>
+</header>
 
+<!--end of ajax and json-->
+
+<div id="animal-info"></div>
   <script src="javascript/script.js"></script>
 
 </body>
