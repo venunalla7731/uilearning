@@ -12,13 +12,22 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
+<script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+<body>
+  
+<!--hide and show-->
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+</body>
   <body onload="fetchBookmarks()">
 
-    <div class="container">
+    <div class="container" id="top"><a href="top"></a>
       <div class="header clearfix">
-        <nav>
-
-        </nav>
+        <a href="#top">Top</a>&nbsp&nbsp<a href="#middle">Middle</a>
         <h3 class="text-muted">Bookmarker</h3>
       </div>
 
@@ -49,18 +58,23 @@
 
     </div> <!-- /container -->
 
-    <script
-    src="https://code.jquery.com/jquery-3.1.1.js"
-    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-    crossorigin="anonymous"></script>
+    
     <script src="javascript/bootstrap.min.js"></script>
     <script src="javascript/main.js"></script>
-<section style="text-align: center;">
+
+<!--scroll-->
+
+
+<div Middle></div>
+<!--scroll end-->
+
+<section style="text-align: center;" id="middle" class="jumbotron"><a href="middle"></a>
   wall to wall<input type = "number" id = "across"><br>
 
   height of walls<input type="number" id="height"><br>
 
   <button onclick="materialsNeeded()" class="btn btn-primary">calculate materials</button>
+  <div id="outputForCarpetPaint"></div>
   <h1>what is your state?</h1>
   <select id="state">
     <option value="WY">wyoming</option>
@@ -109,6 +123,5 @@
 
 <div id="animal-info"></div>
   <script src="javascript/script.js"></script>
-
 </body>
 </html>
