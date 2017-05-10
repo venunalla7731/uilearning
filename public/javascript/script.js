@@ -14,11 +14,11 @@ function materialsNeeded(){
     var d = document.getElementById("across").value;
     var h = document.getElementById("height").value;
 
-    var carpetNeeded = floor(d);
-    var paintNeeded = walls(d, h);
-
-    console.log(carpetNeeded);
-    console.log(paintNeeded);
+    var carpetNeeded = Math.ceil(floor(d));
+    var paintNeeded = Math.ceil(walls(d, h));
+document.getElementById("outputForCarpetPaint").innerHTML = 'carpet Needed is '+carpetNeeded+' sqft' + '<br>' + 'paint Needed is '+paintNeeded+' sqft';
+    console.log('carpet Needed is '+carpetNeeded+' sqft');
+    console.log('paint Needed is '+paintNeeded+' sqft');
 
 }
 
@@ -124,3 +124,11 @@ function renderHTML(data) {
 }
 
 // end of Ajax and json function in javascript
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("section").hide();
+    });
+    $("#show").click(function(){
+        $("section").show();
+    });
+});

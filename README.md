@@ -12,3 +12,9 @@ After cloning the repo run the following in the command line:
 
 1. ```npm install```
 2. ```node app.js```
+=============
+for work-in-progress to show
+1.npm install localtunnel -g
+2.lt --port 3000
+optional
+3.lt --port 3000 --subdomain venunalla
